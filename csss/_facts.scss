@@ -1,0 +1,47 @@
+.facts {
+    background-color: $blue;
+    padding: 0;
+
+    .colum2-for-facts {
+        display: flex;
+
+        .colum-for-facts {
+            width: 50%;
+        }
+    }
+
+    .col-left {
+        .colum-for-facts {
+            border-right: 1px solid $white;
+        }
+    }
+
+    .col-right {
+        .colum-for-facts {
+            border-left: 1px solid $white;
+        }
+    }
+
+    .colum-for-facts {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 90px 0;
+
+        .facts-text {
+            color: $white;
+            font-family: $montserat;
+            color: $white;
+            font-weight: normal;
+            font-size: 14px;
+            text-align: center;
+
+            span {
+                font-weight: 700;
+                font-size: 72px;
+            }
+
+        }
+    }
+}

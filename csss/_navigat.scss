@@ -1,0 +1,109 @@
+form.show {
+    opacity: 1;
+    visibility: visible;
+
+    input {
+        padding-left: 5px;
+        transition: all 0.5s 0.8s ease;
+    }
+}
+
+form.noshow {
+    opacity: 0;
+    visibility: hidden;
+    width: 0;
+    display: none;
+}
+
+input.form-control {
+    border: none;
+    font: italic 300 15px/24px "Roboto", sans-serif;
+    color: #999;
+}
+
+input.form-control:focus {
+    box-shadow: none;
+}
+
+input::placeholder {
+    color: #fff;
+}
+
+header.main-navigation {
+    position: absolute;
+    margin: 0 auto;
+    width: 100%;
+    z-index: 1000;
+
+    nav.navbar {
+        width: 100%;
+        h1 
+        {
+            a {
+                    color: $white;
+                }
+            
+                a:hover {
+                    color: $yellow;
+                    text-decoration: none;
+                }
+                a:active {
+                    color: $yellow;
+                    text-decoration: none;
+                }
+            }
+        .navbar-nav
+        {
+            a{
+                color: $white;
+                font-size: 14px;
+                font-weight: 400;
+                font-family: $montserat;
+                text-transform: uppercase;
+            }
+
+            a:hover,
+            li.nav-item.active a,
+            li:hover a {
+                color: $yellow;
+                text-decoration: none;
+            }
+    
+            li:hover {
+                border-bottom: 3px solid $yellow;
+                padding-bottom: 8px!important;
+            }
+    
+            li.nav-item.active {
+                border-bottom: 3px solid $yellow;
+                ;
+            }
+    
+            li.nav-item {
+                padding: 10px 0 11px;
+                margin-right: 50px;
+            }
+    
+
+        }
+
+        .button-img {
+            margin-right: 40px;
+        }
+        img.button-search:hover {
+            cursor: pointer;
+        }
+
+        .navbar-toggler {
+            background-color: $white;
+            float: right;
+            padding: 10px;
+
+            .navbar-toggler-icon {
+                background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,102,203, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+
+            }
+        }
+
+    }
+}

@@ -1,0 +1,91 @@
+.block-w-photo {
+    text-align: center;
+
+    .title {
+        font: 400 14px/24px $montserat;
+        color: $gray;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+    }
+
+    .smaltitle {
+        font: italic 300 15px/24px $roboto;
+    }
+}
+
+figure.plitka {
+    margin-bottom: 30px;
+    height: 470px;
+    transition: 0.55s opacity, 0.55s visibility;
+
+    >img {
+        width: auto;
+        height: 100%;
+    }
+
+    .contacts {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        z-index: 2;
+        opacity: 0;
+        visibility: hidden;
+        width: 100%;
+        height: 100%;
+        transition: 0.8s opacity, 0.12s visibility;
+        top: 0;
+
+        .contact {
+            width: 55px;
+            height: 55px;
+            background-color: $yellow;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: background-color 0.5s, transform 1s;
+        }
+
+        .contact:not(:last-child) {
+            border-right: 1px solid $red;
+        }
+    }
+}
+
+figure.plitka:hover {
+    box-shadow: 10px 10px 1px #95e1d3;
+    width: calc(100% + 10px);
+    transition: 0.3s linear;
+    transform: translate(-10px, -10px);
+
+    .overli.block-hidden {
+        opacity: 0.9;
+        visibility: visible;
+    }
+
+    .contacts {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .contact:hover {
+        background-color: $red;
+
+        g {
+            fill: $white;
+        }
+    }
+}
+
+.overli.block-hidden {
+    opacity: 0;
+    visibility: hidden;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    transition: 0.55s opacity, 0.55s visibility, width 2s, height 2s, background-color 2s, transform 2s, top 2s;
+    position: absolute;
+    background: rgb(252, 227, 138);
+    background: linear-gradient(0deg, rgba(252, 227, 138, 1) 0%, rgba(243, 129, 129, 1) 100%);
+
+}

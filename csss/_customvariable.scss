@@ -1,0 +1,45 @@
+$font-family-base: 'Roboto', sans-serif;
+$body-color: #999999;
+$body-bg: #fff;
+
+$carousel-indicator-width: 100%;
+$carousel-indicator-height: 3px;
+$carousel-indicator-hit-area-height: 0;
+$carousel-indicator-spacer: 0px;
+$carousel-control-width: 0px;
+$carousel-control-width: 0px;
+
+$container-max-widths: (
+  sm: 540px,
+  md: 768px,
+  lg: 992px,
+  xl: 1230px
+);
+
+$paragraph-margin-bottom: 0px;
+
+$navbar-padding-y: 20px;
+$navbar-padding-x: 0;
+$navbar-nav-link-padding-x: 0;
+$navbar-nav-link-padding-x: 0;
+$nav-link-padding-y: 0;
+$nav-link-padding-x: 0;
+$navbar-brand-padding-y: 0;
+$navbar-brand-padding-y: 0;
+$navbar-brand-font-size: 30px;
+
+$h4-font-size: 14px;
+$headings-margin-bottom: 0;
+$hr-border-color: #e5e5e5;
+$hr-margin-y: 20px;
+
+$card-bg: transparent;
+$card-border-color: #e5e5e5;
+$card-border-radius: 0;
+$card-spacer-y: 15px;
+$card-spacer-x: 15px;
+$card-cap-bg: transparent;
+$link-color: #333;
+$btn-focus-box-shadow: none;
+
+$input-border-radius:1px;
